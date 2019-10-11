@@ -11,19 +11,13 @@ namespace Computers
     {
         static void Main(string[] args)
         {
-            PersonalComputer pc = new PersonalComputer()
-                .AddKeyboard(new NormalKeyboard())
-                .AddMouse(new NormalMouse())
-                .AddSpeakers(new ElectrostaticLoudspeaker());
+            PersonalComputer pc = new PersonalComputer();
 
             Console.WriteLine("Personal Computer:");
             pc.Restart();
             pc.RunSoftware("PUBG Mobile PC");
             pc.ShutDown();
             pc.StartOS();
-            pc.UseKeyboard();
-            pc.UseMouse();
-            pc.UseSpeakers();
             Console.WriteLine();
 
             Laptop laptop = new Laptop(pc)
