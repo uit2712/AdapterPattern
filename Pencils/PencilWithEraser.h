@@ -5,7 +5,8 @@
 using namespace std;
 
 // Class Adapter: multi inheritance
-class PencilWithEraser : public Pencil, public Eraser
+// Adaptee is Pencil class
+class PencilWithEraser : public Pencil, private Eraser
 {
 public:
 	PencilWithEraser();
